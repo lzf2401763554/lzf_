@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ad" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@css/work.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.work.AdministratorController">
+   <children>
+      <Label fx:id="label" layoutY="-2.0" prefHeight="32.0" prefWidth="182.0">
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font></Label>
+      <Button fx:id="jbxx" layoutX="51.0" layoutY="299.0" mnemonicParsing="false" onAction="#information" prefHeight="74.0" prefWidth="130.0" style="-fx-background-radius: 25;" text="公路基本信息" />
+      <Button fx:id="wxgl" layoutX="423.0" layoutY="299.0" mnemonicParsing="false" onAction="#maintenance" prefHeight="74.0" prefWidth="130.0" style="-fx-background-radius: 25;" text="公路维修管理" />
+      <Button fx:id="sgxx" layoutX="235.0" layoutY="299.0" mnemonicParsing="false" onAction="#accident" prefHeight="74.0" prefWidth="130.0" style="-fx-background-radius: 25;" text="公路事故信息" />
+      <AnchorPane fx:id="an" layoutX="94.0" layoutY="30.0" prefHeight="246.0" prefWidth="425.0" visible="false">
+         <children>
+            <TextField fx:id="id" disable="true" layoutX="45.0" layoutY="59.0" />
+            <TextField fx:id="age" layoutX="45.0" layoutY="99.0" onAction="#isNull" prefHeight="23.0" prefWidth="52.0" />
+            <TextField fx:id="phone" layoutX="45.0" layoutY="139.0" onAction="#isNull" />
+            <Label layoutX="170.0" layoutY="14.0" prefHeight="32.0" prefWidth="99.0" text="修改信息">
+               <font>
+                  <Font name="System Bold Italic" size="24.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" disable="true" layoutX="46.0" layoutY="177.0" />
+            <Label layoutX="22.0" layoutY="63.0" text="ID:" />
+            <Label layoutX="14.0" layoutY="103.0" text="年龄:" />
+            <Label layoutX="14.0" layoutY="143.0" text="电话:" />
+            <Label layoutX="8.0" layoutY="181.0" text="用户名:" />
+            <TextField fx:id="name" layoutX="246.0" layoutY="59.0" onAction="#isNull" />
+            <TextField fx:id="area" disable="true" layoutX="247.0" layoutY="139.0" prefHeight="23.0" prefWidth="79.0" />
+            <TextField fx:id="password" layoutX="248.0" layoutY="177.0" onAction="#isNull" />
+            <Label layoutX="215.0" layoutY="63.0" text="姓名:" />
+            <Label layoutX="215.0" layoutY="103.0" text="性别:" />
+            <Label layoutX="215.0" layoutY="143.0" text="辖区:" />
+            <Label layoutX="215.0" layoutY="181.0" text="密码:" />
+            <MenuButton fx:id="sex" layoutX="246.0" layoutY="99.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="52.0">
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#set_" text="男" />
+                <MenuItem mnemonicParsing="false" onAction="#set_" text="女" />
+              </items>
+            </MenuButton>
+            <Button fx:id="update_" layoutX="126.0" layoutY="209.0" mnemonicParsing="false" onAction="#update_A" prefHeight="32.0" prefWidth="64.0" text="修改" />
+            <Button layoutX="229.0" layoutY="209.0" mnemonicParsing="false" onAction="#shut_" prefHeight="32.0" prefWidth="64.0" text="关闭" />
+         </children>
+      </AnchorPane>
+      <MenuButton fx:id="menu" layoutX="530.0" layoutY="2.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="70.0" text="菜单">
+        <items>
+          <MenuItem mnemonicParsing="false" onAction="#putInformation" text="个人信息" />
+          <MenuItem mnemonicParsing="false" onAction="#updateA" text="修改信息" />
+        </items>
+         <font>
+            <Font name="System Bold Italic" size="12.0" />
+         </font>
+      </MenuButton>
+   </children>
+</AnchorPane>

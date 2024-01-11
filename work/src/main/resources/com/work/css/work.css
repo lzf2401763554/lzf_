@@ -1,0 +1,66 @@
+#ad{
+    -fx-background-image: url("../images/09634406a051372.png");
+}
+#label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+Button{
+
+    -fx-background-repeat: no-repeat; /* 背景图片不平铺
+*/
+    -fx-background-position: center; /* 背景图片居中对齐
+*/
+    -fx-background-color: #00803c;
+    -fx-text-fill: white;
+}
+#jbxx{
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+
+    -fx-border-color: black;
+}
+#wxgl{
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+
+    -fx-border-color: black;
+}
+#sgxx{
+    -fx-border-radius: 25;
+    -fx-background-radius: 25;
+
+    -fx-border-color: black;
+}
+#re{
+    -fx-border-radius: 360;
+    -fx-background-radius: 360;
+    -fx-background-image: url("../images/刷新.png");
+    -fx-border-color: black;
+    -fx-background-color: transparent;
+}
+#wjmm{
+    -fx-background-color: transparent;
+    -fx-text-fill: black;
+}
+#login{
+    -fx-background-image: url("../images/R-C.png");
+}
+AnchorPane{
+
+    -fx-background-repeat: no-repeat; /* 背景图片不平铺
+*/
+    -fx-background-position: center; /* 背景图片居中对齐*/
+
+}
+#an{
+    -fx-background-image: url("../images/f56513788384645db768d0ec542dec33_r.jpg");
+    -fx-background-size: 100% auto ;
+}
+MenuItem,contextMenu{
+    -fx-background-repeat: no-repeat; /* 背景图片不平铺
+*/
+    -fx-background-position: center; /* 背景图片居中对齐*/
+    -fx-background-image: url("../images/自定义-文本框.png");
+    -fx-background-size: 100% auto ;
+}
